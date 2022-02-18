@@ -8,7 +8,7 @@ scriptname=${0##*/}
 notice()
 {
 	echo "$*"
-	log -t "$scriptname" -i "$*"
+	log -t "$scriptname" -p i "$*"
 }
 
 # We take this from cpuinfo because hex "letters" are lowercase there
