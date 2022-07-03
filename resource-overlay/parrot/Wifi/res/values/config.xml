@@ -28,6 +28,9 @@
     <!-- Wifi driver supports 5GHz band for softap when chip support 5GHz -->
     <bool name="config_wifiSoftap5ghzSupported" translatable="false">true</bool>
 
+    <!-- Wifi driver supports 6GHz band for softap when chip support 6GHz -->
+    <bool name="config_wifiSoftap6ghzSupported">true</bool>
+
     <!-- Indicates that bridged AP mode is supported on this device provided that
      the device interface combination allows for it -->
     <bool name="config_wifiBridgedSoftApSupported" translatable="false">true</bool>
@@ -35,6 +38,10 @@
     <!-- Indicates that STA + bridged AP concurrency mode is supported on this device provided
      that the device interface combination allows for it-->
     <bool name="config_wifiStaWithBridgedSoftApConcurrencySupported" translatable="false">true</bool>
+
+    <!-- Configure wifi tcp buffersizes in the form:
+         rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max -->
+    <string name="config_wifi_tcp_buffers" translatable="false">524288,1048576,2097152,524288,1048576,4194304</string>
 
     <!-- Enable Make-Before-Break Wifi network switching.
          Note: this is conditional on the device supporting dual concurrent STAs. -->
