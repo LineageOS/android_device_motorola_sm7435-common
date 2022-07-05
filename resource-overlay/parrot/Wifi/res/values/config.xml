@@ -51,6 +51,10 @@
          Note: this is conditional on the device supporting dual concurrent STAs. -->
     <bool name="config_wifiMultiStaLocalOnlyConcurrencyEnabled" translatable="false">true</bool>
 
+    <!-- Enable concurrent restricted connectivity + internet connectivity
+         Note: this is conditional on the device supporting dual concurrent STAs. -->
+    <bool name="config_wifiMultiStaRestrictedConcurrencyEnabled">true</bool>
+
     <!-- A boolean indicate if device supports ser channel on the Aware data-path setup. If the
     value is false, channel setting on the data-path request will be ignored.
     -->
