@@ -551,11 +551,14 @@ vendor/etc/pwr/StandbyFeature.xml
 vendor/etc/pwr/VendorScenarioPowerOptFeature.xml
 vendor/etc/pwr/VideoPowerOptFeature.xml
 vendor/etc/vintf/manifest/vendor.qti.hardware.perf.xml
+<<<<<<< HEAD   (43aa9e9a4dc6cf6a9681d121e7c9e680092ba85a sm7435-common: Update WFD system blobs from dada OS2.0.217.0)
 vendor/etc/powerhint.xml
 vendor/lib64/libgamepoweroptfeature.so
 vendor/lib64/liblearningmodule.so
 vendor/lib64/libmeters.so
 vendor/lib64/libpasrutils.so
+=======
+>>>>>>> CHANGE (42c205f493acf44f66d0600632b351ef8306c81c sm7435-common: Copy powerhint.xml from power HAL)
 vendor/lib64/libperfconfig.so
 vendor/lib64/libperfgluelayer.so
 vendor/lib64/libperfioctl.so
