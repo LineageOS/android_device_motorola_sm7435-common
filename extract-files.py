@@ -19,6 +19,7 @@ from extract_utils.main import (
 namespace_imports = [
     'device/motorola/sm7435-common',
     'hardware/motorola',
+    'hardware/qcom-caf/common/libqti-perfd-client',
     'hardware/qcom-caf/sm8450',
     'hardware/qcom-caf/wlan',
     'vendor/qcom/opensource/commonsys-intf/display',
@@ -82,6 +83,9 @@ blob_fixups: blob_fixups_user_type = {
     ),
     'vendor/etc/sensors/hals.conf': blob_fixup().add_line_if_missing(
         'sensors.moto_ext.so',
+    ),
+    'vendor/etc/public.libraries.txt': blob_fixup().regex_replace(
+        'libqti-perfd-client.so\n', ''
     ),
     'vendor/lib64/libmotext_inf.so': blob_fixup().remove_needed('libril.so'),
     'system_ext/priv-app/ims/ims.apk': blob_fixup().apktool_patch(
