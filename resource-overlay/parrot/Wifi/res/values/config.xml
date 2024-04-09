@@ -77,4 +77,10 @@
          immediately after the country code is sent to the driver (if the method returns a
          success). -->
     <bool name="config_wifiDriverSupportedNl80211RegChangedEvent" translatable="false">true</bool>
+
+    <!-- Boolean indicating whether to disable firmware roaming when the device goes into idle mode.
+         true: firmware roaming will be disabled when the device goes into idle mode and screen
+               is off, and then re-activated when the device exits idle mode or screen is on.
+         false: firmware roaming will not be affected. -->
+    <bool translatable="false" name="config_wifiDisableFirmwareRoamingInIdleMode">true</bool>
 </resources>
