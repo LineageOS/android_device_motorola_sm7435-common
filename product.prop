@@ -5,9 +5,11 @@ audio.sys.noisy.broadcast.delay=500
 audio.sys.routing.latency=0
 audio.sys.offload.pstimeout.secs=3
 
+# Bluetooth
+bluetooth.device_id.vendor_id=0x001D
+
 # e-SIM
 masterclear.allow_retain_esim_profiles_after_fdr=true
 
 # Media
 media.stagefright.audio.deep=false
-
