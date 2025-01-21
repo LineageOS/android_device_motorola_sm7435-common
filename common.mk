@@ -129,7 +129,6 @@ PRODUCT_PACKAGES += \
     libloc_socket
 
 PRODUCT_PACKAGES += \
-    apdr.conf \
     batching.conf \
     gnss_antenna_info.conf \
     gps.conf \
