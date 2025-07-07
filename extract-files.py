@@ -80,6 +80,9 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/bin/init.kernel.post_boot.sh': blob_fixup().regex_replace(
         'ro.boot.using_zram_from_fstab', 'ro.vendor.zram.swapon'
     ),
+    'vendor/etc/sensors/hals.conf': blob_fixup().add_line_if_missing(
+        'sensors.moto_ext.so',
+    ),
     'vendor/lib64/libmotext_inf.so': blob_fixup().remove_needed('libril.so'),
     'system_ext/priv-app/ims/ims.apk': blob_fixup().apktool_patch(
         'ims-patches'
