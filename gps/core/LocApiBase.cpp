@@ -1152,11 +1152,12 @@ bool ElapsedRealtimeEstimator::getElapsedRealtimeForGpsTime(
 
     bootTimeUnc = timePair.timeUncMsec;
     LOC_LOGv("gpsTimeAtOrigin (%d, %d), timepair: gps (%d, %d), "
-             "qtimer nsec =%" PRIi64 ", curQTimerNSec=%" PRIi64 " qtimerNsecAtOrigin=%" PRIi64 ""
+             "timer pair qtimer nsec =%" PRIi64 ", curQTimerNSec=%" PRIi64 ""
+             " qtimerNsecAtOrigin=%" PRIi64 ""
              " curBoottimeNSec=%" PRIi64 " bootimeNsecAtOrigin=%" PRIi64 ", boottime unc =%f",
              gpsTimeAtOrigin.gpsWeek, gpsTimeAtOrigin.gpsTimeOfWeekMs,
              timePair.gpsTime.gpsWeek, timePair.gpsTime.gpsTimeOfWeekMs,
-             timePair.qtimerTick/192 * 100000,
+             timePair.qtimerTick/192 * 10000,
              curQTimerNSec, qtimerNsecAtOrigin, curBootTimeNs, bootTimeNsAtOrigin, bootTimeUnc);
 
     if (bootTimeNsAtOrigin > 0) {

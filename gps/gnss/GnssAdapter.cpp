@@ -426,10 +426,20 @@ void GnssAdapter::fillElapsedRealTime(const GpsLocationExtended& locationExtende
         }
     }
 #ifndef FEATURE_AUTOMOTIVE
+    bool needToUseCurrentBootTime = false;
+    uint64_t currentBootTime = getBootTimeMilliSec() * 1000000;
     if (!(out.flags & LOCATION_HAS_ELAPSED_REAL_TIME_BIT)) {
-        out.elapsedRealTime = getBootTimeMilliSec() * 1000000;
-        out.elapsedRealTimeUnc = mPositionElapsedRealTimeCal.getElapsedRealtimeUncNanos();
-        out.flags |= LOCATION_HAS_ELAPSED_REAL_TIME_BIT;
+       needToUseCurrentBootTime = true;
+       LOC_LOGw("can not calculate elapsed real time, set to current time");
+    } else if (out.elapsedRealTime > currentBootTime) {
+       needToUseCurrentBootTime = true;
+       LOC_LOGw("elapsed real time is %" PRIu64 " nsec in future, set to current time",
+                out.elapsedRealTime - currentBootTime);
+    }
+    if (needToUseCurrentBootTime) {
+       out.elapsedRealTime =currentBootTime;
+       out.elapsedRealTimeUnc = mPositionElapsedRealTimeCal.getElapsedRealtimeUncNanos();
+       out.flags |= LOCATION_HAS_ELAPSED_REAL_TIME_BIT;
     }
 #endif //FEATURE_AUTOMOTIVE
 }
