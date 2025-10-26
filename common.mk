@@ -312,6 +312,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Telephony
 PRODUCT_PACKAGES += \
+    EuiccPolicy \
     extphonelib \
     extphonelib-product \
     extphonelib.xml \
