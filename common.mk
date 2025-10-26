@@ -317,6 +317,7 @@ PRODUCT_PACKAGES += \
     extphonelib-product \
     extphonelib.xml \
     extphonelib_product.xml \
+    MotoEuicc \
     MotoNrEnabler \
     ims-ext-common \
     ims_ext_common.xml \
