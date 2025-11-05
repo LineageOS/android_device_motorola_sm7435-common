@@ -7,14 +7,6 @@ on init
 on post-fs
     # MOT_LED_CALIBRATION
     chown camera camera /mnt/vendor/persist/camera/mot_ledcal
-    start vendor.copy_wvcert
-
-service vendor.copy_wvcert /vendor/bin/copy_wvcert.sh
-    class main
-    user system
-    group root system
-    oneshot
-    disabled
 
 on init && property:ro.boot.default_usb_mode=device
     setprop vendor.usb.controller ${ro.boot.usbcontroller}
