@@ -52,12 +52,6 @@ prebuilt_etc {
 }
 
 sh_binary {
-    name: "copy_wvcert.sh",
-    src: "copy_wvcert.sh",
-    vendor: true,
-}
-
-sh_binary {
     name: "init.class_main.sh",
     src: "init.class_main.sh",
     vendor: true,

@@ -154,7 +154,6 @@ PRODUCT_PACKAGES += \
     init.qcom.recovery.rc \
     init.target.rc \
     ueventd.qcom.rc \
-    copy_wvcert.sh \
     init.class_main.sh \
     init.mmi.boot.sh \
     init.mmi.touch.sh \
