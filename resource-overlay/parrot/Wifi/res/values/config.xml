@@ -1,48 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (c) 2020 Qualcomm Technologies, Inc.
-     All Rights Reserved.
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
-
-<resources>
-    <!-- Wifi driver supports IEEE80211AX for softap -->
-    <bool translatable="false" name="config_wifiSoftapIeee80211axSupported">true</bool>
-
-    <!-- Wifi driver supports IEEE80211AX single user beamformer for softap -->
-    <bool translatable="false" name="config_wifiSoftapHeSuBeamformerSupported">true</bool>
-
-    <!-- Wifi driver supports IEEE80211AX single user beamformee for softap -->
-   <bool translatable="false" name="config_wifiSoftapHeSuBeamformeeSupported">true</bool>
-
-    <!-- Wifi driver supports IEEE80211AX multiple user beamformer for softap -->
-    <bool translatable="false" name="config_wifiSoftapHeMuBeamformerSupported">true</bool>
-
-    <!-- Wifi driver supports IEEE80211AX TWT (Target Wake Time) for softap -->
-    <bool translatable="false" name="config_wifiSoftapHeTwtSupported">true</bool>
-
-    <!-- Indicate the driver support NL80211_REG_CHANGED event. -->
-    <bool translatable="false" name="config_wifiDriverSupportedNl80211RegChangedEvent">true</bool>
-
-    <!-- Indicate the device support request channel on Wi-Fi Aware data-path. -->
-    <bool translatable="false" name="config_wifiSupportChannelOnDataPath">true</bool>
-
-    <!-- Enable concurrent Bridged access point (AP) support -->
-    <bool translatable="false" name="config_wifiBridgedSoftApSupported">true</bool>
-
-    <!-- Enable concurrent STA + STA peer to peer + internet connectivity -->
-    <bool translatable="false" name="config_wifiMultiStaLocalOnlyConcurrencyEnabled">true</bool>
-
-    <!-- Enable concurrent STA + STA MBB support -->
-    <bool translatable="false" name="config_wifiMultiStaNetworkSwitchingMakeBeforeBreakEnabled">true</bool>
-
-    <!-- Wifi driver supports 5GHz band for softap when chip support 5GHz -->
-    <bool translatable="false" name="config_wifiSoftap5ghzSupported">true</bool>
-
-    <!-- Indicates that STA + bridged AP concurrency mode is supported on this device -->
-    <bool translatable="false" name="config_wifiStaWithBridgedSoftApConcurrencySupported">true</bool>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- boolean indicating whether the WiFi chipset has 6GHz band support -->
+    <bool name="config_wifi6ghzSupport" translatable="false">true</bool>
 
     <!-- Wifi driver supports Automatic channel selection (ACS) for softap -->
-    <bool translatable="false" name="config_wifi_softap_acs_supported">true</bool>
+    <bool name="config_wifi_softap_acs_supported" translatable="false">true</bool>
 
-    <!-- boolean indicating whether the WiFi chipset has 6GHz band support -->
-    <bool translatable="false" name ="config_wifi6ghzSupport">true</bool>
+    <!-- Wifi driver supports IEEE80211AX for softap -->
+    <bool name="config_wifiSoftapIeee80211axSupported" translatable="false">true</bool>
+
+    <!-- Wifi driver supports IEEE80211AX single user beamformer for softap -->
+    <bool name="config_wifiSoftapHeSuBeamformerSupported" translatable="false">true</bool>
+
+    <!-- Wifi driver supports IEEE80211AX single user beamformee for softap -->
+    <bool name="config_wifiSoftapHeSuBeamformeeSupported" translatable="false">true</bool>
+
+    <!-- Wifi driver supports IEEE80211AX multiple user beamformer for softap -->
+    <bool name="config_wifiSoftapHeMuBeamformerSupported" translatable="false">true</bool>
+
+    <!-- Wifi driver supports IEEE80211AX TWT (Target Wake Time) for softap -->
+    <bool name="config_wifiSoftapHeTwtSupported" translatable="false">true</bool>
+
+    <!-- Wifi driver supports 5GHz band for softap when chip support 5GHz -->
+    <bool name="config_wifiSoftap5ghzSupported" translatable="false">true</bool>
+
+    <!-- Indicates that bridged AP mode is supported on this device provided that
+     the device interface combination allows for it -->
+    <bool name="config_wifiBridgedSoftApSupported" translatable="false">true</bool>
+
+    <!-- Indicates that STA + bridged AP concurrency mode is supported on this device provided
+     that the device interface combination allows for it-->
+    <bool name="config_wifiStaWithBridgedSoftApConcurrencySupported" translatable="false">true</bool>
+
+    <!-- Enable Make-Before-Break Wifi network switching.
+         Note: this is conditional on the device supporting dual concurrent STAs. -->
+    <bool name="config_wifiMultiStaNetworkSwitchingMakeBeforeBreakEnabled" translatable="false">true</bool>
+
+    <!-- Enable concurrent peer to peer + internet connectivity
+         Note: this is conditional on the device supporting dual concurrent STAs. -->
+    <bool name="config_wifiMultiStaLocalOnlyConcurrencyEnabled" translatable="false">true</bool>
+
+    <!-- A boolean indicate if device supports ser channel on the Aware data-path setup. If the
+    value is false, channel setting on the data-path request will be ignored.
+    -->
+    <bool name="config_wifiSupportChannelOnDataPath" translatable="false">true</bool>
+
+    <!-- Indicates whether or not the WLAN driver supports the NL80211_CMD_REG_CHANGE or
+         NL80211_CMD_WIPHY_REG_CHANGE events which indicate the current country code which is
+         being used by the WLAN driver. If the driver doesn't support these events
+         (configuration is `false`) then the driver must handle the setCountryCode request from
+         HAL as a blocking call. In such a case the country code will be applied
+         immediately after the country code is sent to the driver (if the method returns a
+         success). -->
+    <bool name="config_wifiDriverSupportedNl80211RegChangedEvent" translatable="false">true</bool>
 </resources>
