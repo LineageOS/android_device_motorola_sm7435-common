@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2dd5bfce_46cde7ba",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2025-12-08T21:11:28Z",
+      "side": 1,
+      "message": "Should just apply\n\nhttps://github.com/LineageOS/android_device_oneplus_sm8350-common/commit/134107266577a65b434963cca48a579c5393b4ec",
+      "revId": "dbfad2e6e7d03d618800a5fb35535338d59788b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3c824238_8c7623b8",
