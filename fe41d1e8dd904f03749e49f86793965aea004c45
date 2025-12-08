@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "111776bc_dad50520",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2025-12-08T21:07:17Z",
+      "side": 1,
+      "message": "moto-parrot-gki.config is not needed, prefer to keep device specific configs in the respective devices",
+      "revId": "fe41d1e8dd904f03749e49f86793965aea004c45",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
