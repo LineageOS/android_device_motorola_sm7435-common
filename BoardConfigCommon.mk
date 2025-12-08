@@ -94,8 +94,8 @@ TARGET_KERNEL_CONFIG := \
     gki_defconfig \
     vendor/parrot_GKI.config \
     vendor/ext_config/moto-parrot.config \
-    vendor/ext_config/moto-parrot-gki.config
-
+    vendor/ext_config/moto-parrot-gki.config \
+    vendor/ext_config/moto-parrot-$(PRODUCT_DEVICE).config
 # Kernel Modules
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load))
 BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(TARGET_KERNEL_SOURCE)/modules.vendor_blocklist.msm.parrot
