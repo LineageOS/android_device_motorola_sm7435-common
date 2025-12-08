@@ -14,26 +14,14 @@
 # limitations under the License.
 #
 
-PRODUCT_USE_DYNAMIC_PARTITIONS := true
-
 # Enable project quotas and casefolding for emulated storage without sdcardfs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+# Enforce generic ramdisk allow list
+$(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
+
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
-
-# Overlays
-PRODUCT_PACKAGES += \
-    DialerResCommon \
-    FrameworksResCommon \
-    LineageSdkCommon \
-    SettingsProviderResCommon \
-    SystemUIResCommon \
-    TelephonyResCommon \
-    WifiResCommon \
-    FrameworksResTarget \
-    NcmTetheringOverlay \
-    WifiResTarget
 
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
@@ -122,9 +110,6 @@ PRODUCT_PACKAGES += \
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
-
-# Enforce generic ramdisk allow list
-$(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 
 # fastbootd
 PRODUCT_PACKAGES += \
@@ -222,6 +207,22 @@ PRODUCT_PACKAGES += \
     vendor_fsg_mountpoint \
     vendor_super_fsg_mountpoint \
     vendor_super_modem_mountpoint
+
+# Overlays
+PRODUCT_PACKAGES += \
+    DialerResCommon \
+    FrameworksResCommon \
+    LineageSdkCommon \
+    SettingsProviderResCommon \
+    SystemUIResCommon \
+    TelephonyResCommon \
+    WifiResCommon \
+    FrameworksResTarget \
+    NcmTetheringOverlay \
+    WifiResTarget
+
+# Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Permissions
 PRODUCT_COPY_FILES += \
