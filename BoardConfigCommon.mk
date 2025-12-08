@@ -78,11 +78,12 @@ DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 4
 BOARD_KERNEL_BASE := 0x00000000
-BOARD_KERNEL_CMDLINE += printk.devkmsg=on
-#BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
-BOARD_BOOTCONFIG += androidboot.hardware=qcom
-BOARD_BOOTCONFIG += androidboot.memcg=1
-BOARD_BOOTCONFIG += androidboot.usbcontroller=a600000.dwc3
+BOARD_KERNEL_CMDLINE += \
+    printk.devkmsg=on
+    androidboot.hardware=qcom \
+    androidboot.memcg=1 \
+    androidboot.usbcontroller=a600000.dwc3
+
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
@@ -95,8 +96,6 @@ TARGET_KERNEL_CONFIG := \
     vendor/ext_config/moto-parrot.config \
     vendor/ext_config/moto-parrot-gki.config
 
-TARGET_KERNEL_EXT_MODULE_ROOT := kernel/motorola/sm7435-modules
-
 # Kernel Modules
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load))
 BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(TARGET_KERNEL_SOURCE)/modules.vendor_blocklist.msm.parrot
@@ -104,6 +103,8 @@ BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/m
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES_BLOCKLIST_FILE := $(BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE)
 BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load.recovery))
 BOOT_KERNEL_MODULES := $(BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD)
+
+TARGET_KERNEL_EXT_MODULE_ROOT := kernel/motorola/sm7435-modules
 
 TARGET_KERNEL_EXT_MODULES := \
     qcom/opensource/mmrm-driver \
