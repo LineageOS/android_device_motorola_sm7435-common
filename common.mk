@@ -87,8 +87,10 @@ PRODUCT_COPY_FILES += \
     $(AUDIO_HAL_DIR)/configs/common/bluetooth_qti_hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml \
     $(AUDIO_HAL_DIR)/configs/parrot/card-defs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/card-defs.xml \
     $(AUDIO_HAL_DIR)/configs/parrot/microphone_characteristics.xml:$(TARGET_COPY_OUT_VENDOR)/etc/microphone_characteristics.xml \
-    $(LOCAL_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_parrot/audio_effects.xml \
-    $(LOCAL_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_parrot/audio_effects.xml \
+    $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml
 
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
@@ -400,7 +402,7 @@ $(foreach variant,$(TARGET_WIFI_VARIANTS), \
 
 $(foreach variant,$(TARGET_WIFI_VARIANTS), \
     $(eval PRODUCT_COPY_FILES += \
-        $(LOCAL_PATH)/wifi/$(variant)/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/$(variant)/WCNSS_qcom_cfg.ini) \
+        $(LOCAL_PATH)/configs/wifi/$(variant)/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/$(variant)/WCNSS_qcom_cfg.ini) \
 )
 
 PRODUCT_COPY_FILES += \

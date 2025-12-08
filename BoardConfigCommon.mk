@@ -62,18 +62,18 @@ TARGET_NEEDS_DTBOIMAGE := true
 TARGET_MERGE_DTBS_WILDCARD ?= parrot*base
 
 # Filesystem
-TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
+TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/configs/config.fs
 
 # GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
 
 # HIDL
-DEVICE_FRAMEWORK_MANIFEST_FILE += $(COMMON_PATH)/framework_manifest.xml
+DEVICE_FRAMEWORK_MANIFEST_FILE += $(COMMON_PATH)/configs/vintf/framework_manifest.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     hardware/motorola/vintf/device_framework_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
-DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
+DEVICE_MANIFEST_FILE += $(COMMON_PATH)/configs/vintf/manifest.xml
 
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 4
@@ -96,12 +96,13 @@ TARGET_KERNEL_CONFIG := \
     vendor/ext_config/moto-parrot.config \
     vendor/ext_config/moto-parrot-gki.config \
     vendor/ext_config/moto-parrot-$(PRODUCT_DEVICE).config
+
 # Kernel Modules
-BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load))
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/kernel/modules.load))
 BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(TARGET_KERNEL_SOURCE)/modules.vendor_blocklist.msm.parrot
-BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load.vendor_boot))
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/kernel/modules.load.vendor_boot))
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES_BLOCKLIST_FILE := $(BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE)
-BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load.recovery))
+BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/kernel/modules.load.recovery))
 BOOT_KERNEL_MODULES := $(BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD)
 
 TARGET_KERNEL_EXT_MODULE_ROOT := kernel/motorola/sm7435-modules
@@ -191,10 +192,10 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 
 # Properties
-TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
-TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
-TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
-TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
+TARGET_ODM_PROP += $(COMMON_PATH)/configs/properties/odm.prop
+TARGET_PRODUCT_PROP += $(COMMON_PATH)/configs/properties/product.prop
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/configs/properties/system.prop
+TARGET_VENDOR_PROP += $(COMMON_PATH)/configs/properties/vendor.prop
 
 # Recovery
 BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE := true
