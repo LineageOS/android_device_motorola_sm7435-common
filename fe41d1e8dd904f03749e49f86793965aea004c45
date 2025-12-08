@@ -16,6 +16,24 @@
       "message": "moto-parrot-gki.config is not needed, prefer to keep device specific configs in the respective devices",
       "revId": "fe41d1e8dd904f03749e49f86793965aea004c45",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "740f63e2_7a28f6ea",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2025-12-08T21:09:38Z",
+      "side": 1,
+      "message": "We don\u0027t really need to have device kernel config decommonized.\nAlso, I didn\u0027t add moto-parrot-gki.config.",
+      "parentUuid": "111776bc_dad50520",
+      "revId": "fe41d1e8dd904f03749e49f86793965aea004c45",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
