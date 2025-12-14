@@ -1,4 +1,4 @@
-
+# Charger-specific file
 on init
     setprop vendor.usb.adb_early ${ro.boot.adb_early:-"0"}
 
@@ -13,6 +13,22 @@ on property:init.svc.vendor.mmi-usb-sh=stopped && property:ro.boot.mode=charger 
 on property:init.svc.vendor.mmi-usb-sh=stopped && property:ro.boot.mode=charger && property:vendor.usb.adb_early=1
     setprop sys.usb.configfs 1
     setprop sys.usb.config adb
+
+on late-fs-charger
+    class_start early_hal
+    mount_all --late
+    # Boot time fs tune
+    write /sys/block/dm-9/queue/read_ahead_kb 2048
+
+on charger
+    trigger early-fs
+    trigger fs
+    trigger post-fs
+    trigger late-fs-charger
+    trigger post-fs-data
+    trigger moto-charger
+    class_stop main
+    class_stop late_start
 
 on moto-charger
     stop vendor.sensors
@@ -43,6 +59,26 @@ on moto-charger
     #Enable UFS clock gating back
     write /sys/bus/platform/devices/1d84000.ufshc/clkgate_enable 1
 
-on moto-charger && property:ro.vendor.build.motfactory=1
-    wait /sys/class/power_supply/battery/device/factory_image_mode
-    write /sys/class/power_supply/battery/device/factory_image_mode 1
+service vendor.charge_only_mode /vendor/bin/charge_only_mode
+    user root
+    group graphics system input
+    capabilities SYS_BOOT
+    disabled
+
+service vendor.thermal-com /vendor/bin/thermal-engine-v2 --minimode
+    class main
+    user root
+    group root system oem_2907
+    socket thermal-send-client stream 0666 system oem_2907
+    socket thermal-recv-client stream 0660 system oem_2907
+    socket thermal-recv-passive-client stream 0666 system oem_2907
+    socket thermal-send-rule stream 0660 system oem_2907
+    disabled
+
+# support clear batt_firstusagedate flag
+on property:sys.clear_batt_first_usage_date=true
+    write /proc/config/all/new batt_firstusagedateX
+    wait  /proc/config/batt_firstusagedate/ascii
+    write /proc/config/batt_firstusagedate/ascii 1
+    write /mnt/vendor/persist/batt_health/first_usage_date 0
+    setprop sys.clear_batt_first_usage_date done

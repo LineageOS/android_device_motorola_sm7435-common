@@ -186,49 +186,6 @@ wait_for_poweron()
 
 setup_permissions()
 {
-	local bootmode=$(getprop $bootmode_property 2> /dev/null)
-	local key_path
-	local key_files
-	local entry
-	if [ "$bootmode" == "mot-factory" ]; then
-		debug "loosen permissions to $touch_vendor files"
-		case $touch_vendor in
-			  samsung)	key_path="/sys/devices/virtual/sec/sec_ts/"
-						key_files=$(ls $key_path 2>/dev/null)
-						# Set optional permissions to LSI touch tests
-						[ -f $touch_path/size ] && chgrp vendor_tcmd $touch_path/size
-						[ -f $touch_path/address ] && chgrp vendor_tcmd $touch_path/address
-						[ -f $touch_path/write ] && chgrp vendor_tcmd $touch_path/write
-						;;
-			   pixart)	key_path="/sys/bus/i2c/devices/1-0033"
-						key_files="selftest selftest_bin"
-						;;
-			synaptics)	key_path=$touch_path
-						key_files=$(prepend f54 `ls $touch_path/f54/ 2>/dev/null`)
-						key_files=$key_files"reporting query stats";;
-			focaltech)	key_path="/proc/"
-						key_files="fts_tp_test ftxxxx-debug"
-						;;
-			   ilitek)	key_path="/proc/ilitek"
-						key_files="ioctl";;
-			   goodix)	key_path="/proc/"
-						key_files="gmnode"
-						if [[ "$touch_instance" == "GTx5" ]] || [[ "$touch_instance" == "GTx8" ]]; then
-							key_path="/dev/"
-							key_files="gtp_tools"
-						fi
-						;;
-			   stmicro)	key_path="/proc/fts/"
-						key_files="driver_test"
-						# Set optional permissions to LSI touch tests
-						[ -f $touch_path/calibrate ] && chgrp vendor_tcmd $touch_path/calibrate
-						;;
-		esac
-		for entry in $key_files; do
-			chmod 0666 $key_path/$entry
-			debug "change permissions of $key_path/$entry"
-		done
-	fi
 	# Set permissions to enable factory touch tests
 	chgrp vendor_tcmd $touch_path/drv_irq
 	chgrp vendor_tcmd $touch_path/hw_irqstat
