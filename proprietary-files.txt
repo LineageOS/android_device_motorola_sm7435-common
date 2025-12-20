@@ -686,10 +686,13 @@ vendor/lib64/libqmi_client_helper.so
 vendor/lib64/libqmi_client_qmux.so
 vendor/lib64/libqmi_common_so.so
 vendor/lib64/libqmi_csi.so
+vendor/lib64/libqmi_csvt_srvc.so
 vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqmi_legacy.so
+vendor/lib64/libqmiextservices.so
 vendor/lib64/libqmimotext.so
 vendor/lib64/libqmiservices.so
+vendor/lib64/libsmemlog.so
 vendor/lib64/libsubsystem_control.so
 
 # QSPM
@@ -854,6 +857,7 @@ vendor/lib64/libnlnetmgr.so
 vendor/lib64/libpdmapper.so
 vendor/lib64/libpdnotifier.so
 vendor/lib64/libqcbor.so
+vendor/lib64/libqcci_legacy.so
 vendor/lib64/libqcrilDataModule.so
 vendor/lib64/libqcrilNr.so
 vendor/lib64/libqcrilNrCellInfoModule.so
@@ -871,6 +875,7 @@ vendor/lib64/libqcrildatactl.so
 vendor/lib64/libqcrildataqos.so
 vendor/lib64/libqdp.so
 vendor/lib64/libqdpr.so
+vendor/lib64/libqms_client.so
 vendor/lib64/libqrtr.so
 vendor/lib64/libqrtrclient.so
 vendor/lib64/libqsocket.so
