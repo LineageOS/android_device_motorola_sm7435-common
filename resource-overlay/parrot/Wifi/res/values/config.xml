@@ -3,7 +3,7 @@
      SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources>
     <!-- boolean indicating whether the WiFi chipset has 6GHz band support -->
     <bool name="config_wifi6ghzSupport" translatable="false">true</bool>
 
