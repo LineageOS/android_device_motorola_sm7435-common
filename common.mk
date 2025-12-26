@@ -300,7 +300,7 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    sensors.moto_sm7435 \
+    sensors.moto_ext5 \
     android.hardware.sensors-service.multihal
 
 PRODUCT_COPY_FILES += \
