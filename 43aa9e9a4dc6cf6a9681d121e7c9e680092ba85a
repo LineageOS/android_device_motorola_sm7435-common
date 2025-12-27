@@ -34,6 +34,24 @@
       "parentUuid": "9b060d6b_8eedca3a",
       "revId": "43aa9e9a4dc6cf6a9681d121e7c9e680092ba85a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c81b35d5_89121102",
+        "filename": "common.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 307,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2025-12-27T08:09:18Z",
+      "side": 0,
+      "message": "We can\u0027t commonize hals.conf because some devices ship sensors.qsh.so and other libraries and they might need more edits than adding sensors.moto_sm\u003cnum\u003e.so",
+      "parentUuid": "fd9b16e7_76138ac9",
+      "revId": "43aa9e9a4dc6cf6a9681d121e7c9e680092ba85a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
