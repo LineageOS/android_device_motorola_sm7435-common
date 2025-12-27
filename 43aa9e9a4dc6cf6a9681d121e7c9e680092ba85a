@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9b060d6b_8eedca3a",
+        "filename": "common.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 307,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2025-12-27T07:39:17Z",
+      "side": 0,
+      "message": "I see the hals.conf nuked, but the copy line is still here, how will we be declaring the hals.conf? I don\u0027t see it in the hardware/motorola repos either",
+      "revId": "43aa9e9a4dc6cf6a9681d121e7c9e680092ba85a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
