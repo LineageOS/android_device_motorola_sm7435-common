@@ -16,6 +16,24 @@
       "message": "If you\u0027re gonna include it in the device tree instead of extract files, you\u0027ll need to rename this to sensors.moto_ext.so",
       "revId": "2cdea7b0638e4290717acce2c5b8cfc72b19c867",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "85e7b063_b9606af9",
+        "filename": "configs/sensors/hals.conf",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2026-01-03T19:57:44Z",
+      "side": 1,
+      "message": "good catch, i havent picked up the change to move it to extract-files.py yet",
+      "parentUuid": "be9452db_daba055c",
+      "revId": "2cdea7b0638e4290717acce2c5b8cfc72b19c867",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
