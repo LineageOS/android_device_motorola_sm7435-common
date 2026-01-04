@@ -11,6 +11,28 @@
          on the headphone/microphone jack. When false use the older uevent framework. -->
     <bool name="config_useDevInputEventForAudioJack">true</bool>
 
+    <!-- An array of device capabilities defined by GSMA SGP.22 v2.0.
+         The first item is the capability name that the device supports. The second item is the
+         major version. The minor and revision versions are default to 0s.
+         The device capabilities and their definition in the spec are:
+             gsm : gsmSupportedRelease
+             utran : utranSupportedRelease
+             cdma1x : cdma2000onexSupportedRelease
+             hrpd : cdma2000hrpdSupportedRelease
+             ehrpd : cdma2000ehrpdSupportedRelease
+             eutran : eutranSupportedRelease
+             nfc : contactlessSupportedRelease
+             crl : rspCrlSupportedVersion
+             nrepc : nrEpcSupportedRelease
+             nr5gc : nr5gcSupportedRelease
+             eutran5gc : eutran5gcSupportedRelease
+    -->
+    <string-array name="config_telephonyEuiccDeviceCapabilities" translatable="false">
+        <item>gsm,9</item>
+        <item>utran,9</item>
+        <item>eutran,15</item>
+    </string-array>
+
     <!-- Default files to pin via Pinner Service -->
     <string-array name="config_defaultPinnerServiceFiles" translatable="false">
         <item>"/apex/com.android.art/javalib/core-oj.jar"</item>
