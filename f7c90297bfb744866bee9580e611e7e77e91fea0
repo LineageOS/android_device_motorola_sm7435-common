@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b103d61c_f575f943",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2026-02-14T19:10:45Z",
+      "side": 1,
+      "message": "i\u0027m going through the whole chain now that xiaomi sm8450-common picked up",
+      "revId": "f7c90297bfb744866bee9580e611e7e77e91fea0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
