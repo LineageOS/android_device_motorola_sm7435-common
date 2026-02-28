@@ -76,10 +76,6 @@ blob_fixups: blob_fixups_user_type = {
     ('vendor/lib64/libgarden.so', 'vendor/lib64/libgarden_haltests_e2e.so'): blob_fixup()
         .replace_needed('android.hardware.gnss-V1-ndk_platform.so', 'android.hardware.gnss-V1-ndk.so')
         .replace_needed('vendor.qti.gnss-V3-ndk_platform.so','vendor.qti.gnss-V5-ndk_platform.so'),
-    'vendor/lib64/libmotext_inf.so': blob_fixup()
-        .remove_needed('libril.so'),
-    'vendor/lib64/libqcodec2_core.so': blob_fixup()
-        .add_needed('libcodec2_shim.so'),
     'vendor/lib64/sensors.moto.so': blob_fixup()
         .add_needed('libbase_shim.so'),
     'vendor/lib64/vendor.libdpmframework.so': blob_fixup()

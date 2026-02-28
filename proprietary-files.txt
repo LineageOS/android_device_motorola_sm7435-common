@@ -21,10 +21,6 @@ vendor/lib/rfsa/adsp/bm2n55.bin
 vendor/lib/rfsa/adsp/bm2n56.bin
 vendor/lib/rfsa/adsp/libQnnHtpV73.so
 vendor/lib/rfsa/adsp/libQnnHtpV73Skel.so
-vendor/lib/rfsa/adsp/libSnpeDspV65Skel.so
-vendor/lib/rfsa/adsp/libSnpeDspV66Skel.so
-vendor/lib/rfsa/adsp/libSnpeHtpV68Skel.so
-vendor/lib/rfsa/adsp/libSnpeHtpV69Skel.so
 vendor/lib/rfsa/adsp/libSnpeHtpV73Skel.so
 vendor/lib/rfsa/adsp/libSuperSensor_skel.so
 vendor/lib/rfsa/adsp/libadsp_jpege_skel.so
@@ -49,7 +45,6 @@ vendor/lib/rfsa/adsp/libworker_pool.so
 vendor/lib64/libadm.so
 vendor/lib64/libaualgo_foundation.so
 vendor/lib64/libaudio_log_utils.so
-vendor/lib64/libdapparamstorage.so
 vendor/lib64/libmcs.so
 vendor/lib64/libpal_net_if.so
 vendor/lib64/libqtigefar.so
@@ -93,7 +88,6 @@ vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 
 # Camera - ICP
 vendor/firmware/CAMERA_ICP.elf
-vendor/firmware/CAMERA_ICP_170.elf
 
 # Camera - Motorola
 vendor/bin/hw/motorola.hardware.camera.desktop@2.0-service
@@ -211,15 +205,6 @@ vendor/lib64/libhdr_tm.so
 vendor/lib64/libmemutils.so
 
 # Display - SDM
-vendor/etc/display/DPU660.xml
-vendor/etc/display/DPU670.xml
-vendor/etc/display/DPU720.xml
-vendor/etc/display/DPU7__.xml
-vendor/etc/display/DPU820.xml
-vendor/etc/display/DPU830.xml
-vendor/etc/display/DPU860.xml
-vendor/etc/display/DPU8__.xml
-vendor/etc/display/DPU9__.xml
 vendor/etc/display/advanced_sf_offsets.xml
 vendor/etc/display/thermallevel_to_fps.xml
 vendor/lib64/libdisplayqos.so
@@ -963,24 +948,6 @@ vendor/lib64/vendor.qti.hardware.trustedui@1.0.so
 vendor/lib64/vendor.qti.hardware.trustedui@1.1.so
 vendor/lib64/vendor.qti.hardware.trustedui@1.2.so
 
-# Venus firmware
-vendor/firmware/venus_4mb.mbn
-vendor/firmware/venus_4mb_ecdsa.mbn
-vendor/firmware/venus_4mb_unsigned.mbn
-vendor/firmware/venus_4mb_v6.mbn
-vendor/firmware/venus_4mb_v6_rsa.mbn
-vendor/firmware/venus_4mb_v7.mbn
-vendor/firmware/venus_5mb.mbn
-vendor/firmware/venus_5mb_ecdsa.mbn
-vendor/firmware/venus_5mb_unsigned.mbn
-vendor/firmware/venus_5mb_v6.mbn
-vendor/firmware/venus_5mb_v6_rsa.mbn
-vendor/firmware/venus_5mb_v7.mbn
-vendor/firmware/venus_ecdsa.mbn
-vendor/firmware/venus_v6.mbn
-vendor/firmware/venus_v6_rsa.mbn
-vendor/firmware/venus_v7.mbn
-
 # VPP
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so
@@ -997,7 +964,6 @@ vendor/lib64/libwvhidl.so
 
 # WiFi
 vendor/bin/cnss-daemon
-vendor/etc/init/init.vendor.wlan.rc
 
 # WiFi Display (system) - from dada OS2.0.217.0.WOCMIXM
 system/framework/WfdCommon.jar;BOOT_JAR|76fab5ed43206989057284fa26e8b894f1da102f
