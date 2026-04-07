@@ -5,8 +5,8 @@ vendor/bin/adsprpcd
 vendor/bin/loadalgo
 vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
 vendor/lib64/libadsp_default_listener.so
-vendor/lib64/libadsprpc.so
 vendor/lib64/libadspd.so
+vendor/lib64/libadsprpc.so
 vendor/lib64/libloadalgo_stub.so
 
 # ADSP modules
@@ -351,9 +351,9 @@ vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 # GNSS
 vendor/bin/edgnss-daemon
 vendor/bin/engine-service
+vendor/bin/garden_app
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
-vendor/bin/mlid
 vendor/bin/xtra-daemon
 vendor/etc/init/loc-launcher.rc
 vendor/etc/vintf/manifest/vendor.qti.gnss-service.xml
@@ -361,7 +361,9 @@ vendor/lib64/libcdfw.so
 vendor/lib64/libcdfw_remote_api.so
 vendor/lib64/libdataitems.so
 vendor/lib64/libengineplugin.so
-vendor/lib64/libgnsspps.so
+vendor/lib64/libgarden.so
+vendor/lib64/libgarden_haltests_e2e.so
+vendor/lib64/libgdtap.so
 vendor/lib64/libizat_client_api.so
 vendor/lib64/libizat_core.so
 vendor/lib64/liblbs_core.so
@@ -379,12 +381,10 @@ vendor/lib64/liblocdiagiface.so
 vendor/lib64/liblowi_client.so
 vendor/lib64/liblowi_common.so
 vendor/lib64/liblowi_wifihal.so
-vendor/lib64/libminksocket_vendor.so
-vendor/lib64/libqppe.so
 vendor/lib64/libslimclient.so
+vendor/lib64/libsynergy_loc_api.so
 vendor/lib64/libsys_info_cache.so
 vendor/lib64/libxtadapter.so
-vendor/lib64/vendor.qti.gnss-V3-ndk_platform.so
 vendor/lib64/vendor.qti.gnss-V5-ndk_platform.so
 vendor/lib64/vendor.qti.gnss-service.so
 
@@ -521,6 +521,10 @@ vendor/lib64/libvideotxr.so
 vendor/lib64/libvideoutils.so
 vendor/lib64/qti.video.utils.videobufferlayout.so
 
+# Mink-Lowi Interface daemon
+vendor/bin/mlid
+vendor/lib64/libminksocket_vendor.so
+
 # Neural networks
 vendor/lib64/libQnnHtp.so
 vendor/lib64/libQnnHtpV73Stub.so
@@ -549,13 +553,21 @@ system_ext/etc/public.libraries-qti.txt
 vendor/etc/public.libraries.txt
 
 # QCC - System
+system_ext/app/QCC/QCC.apk
 system_ext/bin/qccsyshal@1.2-service
 system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc
+system_ext/etc/permissions/com.qti.qcc.vendor_qcc.xml
+system_ext/lib64/libqcc.so
 system_ext/lib64/libqcc_file_agent_sys.so
+system_ext/lib64/libqccdme.so
+system_ext/lib64/libqccfileservice.so
 system_ext/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 system_ext/lib64/vendor.qti.hardware.qccsyshal@1.1.so
 system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2-halimpl.so
 system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2.so
+system_ext/lib64/vendor.qti.hardware.qccvndhal@1.0.so
+system_ext/lib64/vendor.qti.qccsyshal_aidl-V1-ndk.so
+system_ext/lib64/vendor.qti.qccvndhal_aidl-V1-ndk.so
 
 # QCC - vendor
 vendor/etc/init/init.qdmastats.rc
@@ -565,7 +577,7 @@ vendor/lib64/libqcc_file_agent.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.1.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so
-vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so
+vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so;MODULE_SUFFIX=_vendor
 
 # QCV
 vendor/bin/init.qti.qcv.sh
