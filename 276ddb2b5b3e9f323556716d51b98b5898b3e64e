@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "444b85da_01998dba",
+        "filename": "gps/etc/apdr.conf",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-04-15T22:54:22Z",
+      "side": 0,
+      "message": "https://review.lineageos.org/c/LineageOS/android_device_osom_ingot/+/480630",
+      "revId": "276ddb2b5b3e9f323556716d51b98b5898b3e64e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
