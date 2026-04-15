@@ -34,6 +34,24 @@
       "parentUuid": "f7e43969_0aab02a0",
       "revId": "c2ba5a32a732e399f7218a3b5b0d0a554392788a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9c85de46_4e6c8a8a",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 387,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-04-15T23:22:20Z",
+      "side": 1,
+      "message": "On ingot at least it was also not built but present on stock, so it might have been a long term issue from the inherited trees",
+      "parentUuid": "602ef9ea_f059d2f4",
+      "revId": "c2ba5a32a732e399f7218a3b5b0d0a554392788a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
