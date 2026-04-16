@@ -977,6 +977,9 @@ vendor/etc/init/ssgtzd.rc
 vendor/etc/ssg/ta_config.json
 vendor/etc/ssg/tz_whitelist.json
 
+# SSR
+vendor/bin/ssr_setup
+
 # Thermal engine
 vendor/bin/thermal-engine-v2
 vendor/etc/init/init_thermal-engine-v2.rc
