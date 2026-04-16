@@ -660,6 +660,7 @@ vendor/bin/qtigetprop
 vendor/bin/qtisetprop
 vendor/bin/rmt_storage
 vendor/bin/shsusrd
+vendor/bin/ssgqmigd64
 vendor/bin/tftp_server
 vendor/etc/data/dsi_config.xml
 vendor/etc/data/netmgr_config.xml
