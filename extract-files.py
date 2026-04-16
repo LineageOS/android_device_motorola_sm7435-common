@@ -36,6 +36,8 @@ libs_add_vendor_suffix = (
     'vendor.qti.diaghal@1.0',
     'vendor.qti.hardware.wifidisplaysession@1.0',
     'com.qualcomm.qti.dpm.api@1.0',
+    'vendor.qti.hardware.dpmservice@1.0',
+    'vendor.qti.hardware.dpmservice@1.1',
 )
 
 
