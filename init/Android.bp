@@ -98,9 +98,3 @@ sh_binary {
     src: "init.qcom.sh",
     vendor: true,
 }
-
-sh_binary {
-    name: "init.qti.write.sh",
-    src: "init.qti.write.sh",
-    vendor: true,
-}
