@@ -23,6 +23,12 @@ bluetooth.profile.pbap.server.enabled=true
 # e-SIM
 masterclear.allow_retain_esim_profiles_after_fdr=true
 
+# IMS
+ro.qcom.ims.use_moto_vt_ext=true
+
 # Media
 media.stagefright.audio.deep=false
+
+# System server
+arm64.memtag.process.system_server=off
 
