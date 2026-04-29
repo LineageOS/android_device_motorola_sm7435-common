@@ -275,7 +275,9 @@ msm_drm.ko
 msm-mmrm.ko
 goodix_brl_mmi.ko
 focaltech_0flash_v2_mmi.ko
+nova_0flash_mmi.ko
 ili9882_mmi.ko
+bu520xx_pen.ko
 mmi_annotate.ko
 mmi_info.ko
 mmi_relay.ko

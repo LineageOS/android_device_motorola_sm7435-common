@@ -142,11 +142,14 @@ TARGET_KERNEL_EXT_MODULES += \
     motorola/drivers/misc/awinic/sarsensor \
     motorola/drivers/misc/stk501xx \
     motorola/drivers/misc/sx937x \
+    motorola/drivers/misc/pen \
     motorola/drivers/input/touchscreen/touchscreen_mmi \
     motorola/drivers/input/touchscreen/focaltech_0flash_v2_mmi \
     motorola/drivers/input/touchscreen/ili9882_mmi \
     motorola/drivers/input/touchscreen/goodix_berlin_mmi \
+    motorola/drivers/input/touchscreen/nova_0flash_mmi \
     motorola/drivers/input/misc/anc_fps_mmi \
+    motorola/drivers/input/misc/ets_bix_mmi \
     motorola/drivers/input/misc/fpc_fps_mmi \
     motorola/drivers/input/misc/goodix_fod_mmi \
     motorola/drivers/moto_netopt/con_dfpar \
