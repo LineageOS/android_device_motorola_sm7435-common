@@ -254,7 +254,9 @@ sx937x_sar.ko
 stk501xx_sar.ko
 goodix_brl_mmi.ko
 focaltech_0flash_v2_mmi.ko
+nova_0flash_mmi.ko
 ili9882_mmi.ko
+bu520xx_pen.ko
 slg5bm43670.ko
 qti_glink_charger.ko
 qpnp_adaptive_charge.ko
@@ -270,6 +272,7 @@ leds_aw99703.ko
 ktd3136_bl.ko
 mmi_stow.ko
 fpc1020_mmi.ko
+ets_bix_mmi.ko
 goodix_fod_mmi.ko
 anc_fps_mmi.ko
 con_dfpar.ko
