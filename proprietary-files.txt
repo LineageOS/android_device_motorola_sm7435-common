@@ -928,11 +928,6 @@ vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
 
-# Synx
-vendor/lib64/libos.so
-vendor/lib64/libsynx.so
-vendor/lib64/libthreadutils.so
-
 # SSGTZ
 vendor/bin/ssgtzd
 vendor/etc/init/ssgtzd.rc
