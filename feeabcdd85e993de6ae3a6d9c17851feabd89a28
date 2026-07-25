@@ -34,6 +34,24 @@
       "parentUuid": "97fea8a2_42b22920",
       "revId": "feeabcdd85e993de6ae3a6d9c17851feabd89a28",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "00874fb9_8740c85e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-07-25T19:54:09Z",
+      "side": 1,
+      "message": "It\u0027s only useful for dual dsi panels, so I wouldn\u0027t add it unless it\u0027s explicitly needed",
+      "parentUuid": "6eb38d3f_720cdeee",
+      "revId": "feeabcdd85e993de6ae3a6d9c17851feabd89a28",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
