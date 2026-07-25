@@ -52,6 +52,24 @@
       "parentUuid": "6eb38d3f_720cdeee",
       "revId": "feeabcdd85e993de6ae3a6d9c17851feabd89a28",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "beae9c57_3574aa44",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2026-07-25T21:03:29Z",
+      "side": 1,
+      "message": "Noted, will remove it from the chain. If a device needs it they can enable it in their tree",
+      "parentUuid": "00874fb9_8740c85e",
+      "revId": "feeabcdd85e993de6ae3a6d9c17851feabd89a28",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
