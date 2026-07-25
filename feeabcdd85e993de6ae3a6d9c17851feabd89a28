@@ -70,6 +70,24 @@
       "parentUuid": "00874fb9_8740c85e",
       "revId": "feeabcdd85e993de6ae3a6d9c17851feabd89a28",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1a5a08a2_c7f48af0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2026-07-25T21:05:23Z",
+      "side": 1,
+      "message": "also useful if your device has SPR.",
+      "parentUuid": "beae9c57_3574aa44",
+      "revId": "feeabcdd85e993de6ae3a6d9c17851feabd89a28",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
