@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3c52f661_f609fd4e",
+        "filename": "init/fstab.qcom",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 19252
+      },
+      "writtenOn": "2026-07-27T05:12:07Z",
+      "side": 1,
+      "message": "spacing for lines 41 and 42 need to be adjusted for the mnt_flags to lineup again",
+      "revId": "cd64b2954e55ac0576f7557c70e4d94d89b1cf4b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
