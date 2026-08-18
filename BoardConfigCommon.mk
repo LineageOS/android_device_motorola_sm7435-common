@@ -76,6 +76,7 @@ BOARD_KERNEL_CMDLINE += \
     sysctl.kernel.firmware_config.force_sysfs_fallback=1
 BOARD_BOOTCONFIG += \
     androidboot.hardware=qcom \
+    androidboot.load_modules_parallel=performance \
     androidboot.memcg=1 \
     androidboot.usbcontroller=a600000.dwc3
 BOARD_KERNEL_IMAGE_NAME := Image
