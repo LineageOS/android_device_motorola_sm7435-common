@@ -51,7 +51,6 @@ vendor/lib64/libaualgo_foundation.so
 vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libdapparamstorage.so
 vendor/lib64/libmcs.so
-vendor/lib64/libpal_net_if.so
 vendor/lib64/libqtigefar.so
 
 # Audio misc
@@ -377,6 +376,7 @@ vendor/lib64/liblocdiagiface.so|240f98b080ce924d3a5da569d6f64b6ce85590e5
 vendor/lib64/liblowi_client.so|7a65fd78e743e939f65683cc955ee4e9356fb95d
 vendor/lib64/liblowi_common.so|56b7a06fd55861a913205fea5ea76f35fef798fc
 vendor/lib64/liblowi_wifihal.so|26d7497dacc971db44b977665743768f8df226fc
+vendor/lib64/libpal_net_if.so|68613cea56dc04aaf260b2c2f3489aec15fac214
 vendor/lib64/libslimclient.so|f6c7d4c6a7e3ae21074d6c6bf0afea170cb1ab12
 vendor/lib64/libsynergy_loc_api.so|362cef3e281a29ee3f4a52d1b11c0195db4ccf62
 vendor/lib64/libsys_info_cache.so|19ee23262863149653c64e3a4e48099aac66756a
