@@ -273,6 +273,7 @@ qrtr-mhi.ko
 qrtr-gunyah.ko
 msm_drm.ko
 msm-mmrm.ko
+hall_pen.ko
 goodix_brl_mmi.ko
 focaltech_0flash_v2_mmi.ko
 nova_0flash_mmi.ko

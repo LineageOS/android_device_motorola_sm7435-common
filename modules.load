@@ -251,6 +251,7 @@ mmi_relay.ko
 sensors_class.ko
 touchscreen_mmi.ko
 sx937x_sar.ko
+hall_pen.ko
 stk501xx_sar.ko
 goodix_brl_mmi.ko
 focaltech_0flash_v2_mmi.ko

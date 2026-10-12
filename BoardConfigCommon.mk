@@ -145,6 +145,7 @@ TARGET_KERNEL_EXT_MODULES += \
     motorola/drivers/misc/stk501xx \
     motorola/drivers/misc/sx937x \
     motorola/drivers/misc/pen \
+    motorola/drivers/misc/hall \
     motorola/drivers/input/touchscreen/touchscreen_mmi \
     motorola/drivers/input/touchscreen/focaltech_0flash_v2_mmi \
     motorola/drivers/input/touchscreen/ili9882_mmi \
