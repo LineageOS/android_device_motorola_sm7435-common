@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6fc62f6c_bc4db1ca",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 4
+      },
+      "lineNbr": 623,
+      "author": {
+        "id": 32837
+      },
+      "writtenOn": "2026-10-13T03:28:30Z",
+      "side": 0,
+      "message": "manifest?\n\n    \u003chal format\u003d\"hidl\"\u003e\n        \u003cname\u003evendor.qti.qspmhal\u003c/name\u003e\n        \u003ctransport\u003ehwbinder\u003c/transport\u003e\n        \u003cfqname\u003e@1.0::IQspmhal/default\u003c/fqname\u003e\n    \u003c/hal\u003e",
+      "range": {
+        "startLine": 623,
+        "startChar": 0,
+        "endLine": 623,
+        "endChar": 41
+      },
+      "revId": "f631acd9fa8ad87ff54b1ab74f08018777e1175c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
