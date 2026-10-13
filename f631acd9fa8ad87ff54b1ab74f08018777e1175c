@@ -22,6 +22,30 @@
       },
       "revId": "f631acd9fa8ad87ff54b1ab74f08018777e1175c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8034b3e0_e99044eb",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 4
+      },
+      "lineNbr": 623,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2026-10-13T17:09:38Z",
+      "side": 0,
+      "message": "Good catch, my local amend didn\u0027t take",
+      "parentUuid": "6fc62f6c_bc4db1ca",
+      "range": {
+        "startLine": 623,
+        "startChar": 0,
+        "endLine": 623,
+        "endChar": 41
+      },
+      "revId": "f631acd9fa8ad87ff54b1ab74f08018777e1175c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
