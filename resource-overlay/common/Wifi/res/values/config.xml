@@ -17,7 +17,7 @@
     <bool name="config_wifi_background_scan_support">true</bool>
 
     <!-- Integer indicating maximum hardware supported client number of soft ap -->
-    <integer name="config_wifiHardwareSoftapMaxClientCount">32</integer>
+    <integer name="config_wifiHardwareSoftapMaxClientCount">10</integer>
 
     <!-- Boolean indicating that only configurations that have the same pre-shared key will be linked -->
     <bool name="config_wifi_only_link_same_credential_configurations">false</bool>
@@ -45,4 +45,32 @@
      Enabling this configuration will restore legacy behavior but may result in incorrect behavior.
      -->
     <bool name="config_wifiAllowMultipleNetworksOnSameAwareNdi">true</bool>
+
+    <!-- Controls the mapping between RSSI and RSSI levels. -->
+    <integer-array name="config_wifiRssiLevelThresholds">
+        <item>-88</item>
+        <item>-82</item>
+        <item>-75</item>
+        <item>-65</item>
+    </integer-array>
+
+    <!-- Base durations to temporarily disable a network after each failure reason -->
+    <integer name="config_wifiDisableReasonAssociationRejectionDurationMs">180000</integer>
+    <integer name="config_wifiDisableReasonAuthenticationFailureDurationMs">180000</integer>
+    <integer name="config_wifiDisableReasonDhcpFailureDurationMs">180000</integer>
+    <integer name="config_wifiDisableReasonNetworkNotFoundDurationMs">180000</integer>
+    <integer name="config_wifiDisableReasonConsecutiveFailuresDurationMs">180000</integer>
+
+    <!-- Array describing scanning schedule in seconds when device is disconnected and screen is on -->
+    <integer-array name="config_wifiDisconnectedScanIntervalScheduleSec">
+        <item>20</item>
+        <item>40</item>
+        <item>80</item>
+        <item>80</item>
+    </integer-array>
+
+    <!-- List of allowed channels in 5GHz band for softap. If the device doesn't want to restrict
+         channels this should be empty. Values is a comma separated channel string and/or channel
+         range string like '36-48,149'. -->
+    <string name="config_wifiSoftap5gChannelList">36-161</string>
 </resources>
