@@ -205,7 +205,8 @@ PRODUCT_PACKAGES += \
     WifiResCommon \
     FrameworksResTarget \
     NcmTetheringOverlay \
-    WifiResTarget
+    WifiResTarget \
+    Wifi6gResTarget
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
