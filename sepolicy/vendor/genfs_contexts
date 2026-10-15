@@ -1,0 +1,2 @@
+# WALT
+genfscon proc /sys/walt u:object_r:proc_walt:s0
