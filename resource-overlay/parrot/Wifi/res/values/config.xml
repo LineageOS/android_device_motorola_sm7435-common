@@ -4,32 +4,11 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
-    <!-- boolean indicating whether the WiFi chipset has 6GHz band support -->
-    <bool name="config_wifi6ghzSupport">true</bool>
-
     <!-- Boolean indicating whether 802.11r Fast BSS Transition is enabled on this platform -->
     <bool name="config_wifi_fast_bss_transition_enabled">true</bool>
 
     <!-- Wifi driver supports Automatic channel selection (ACS) for softap -->
     <bool name="config_wifi_softap_acs_supported">true</bool>
-
-    <!-- Wifi driver supports IEEE80211AX for softap -->
-    <bool name="config_wifiSoftapIeee80211axSupported">true</bool>
-
-    <!-- Wifi driver supports IEEE80211AX single user beamformer for softap -->
-    <bool name="config_wifiSoftapHeSuBeamformerSupported">true</bool>
-
-    <!-- Wifi driver supports IEEE80211AX single user beamformee for softap -->
-    <bool name="config_wifiSoftapHeSuBeamformeeSupported">true</bool>
-
-    <!-- Wifi driver supports IEEE80211AX multiple user beamformer for softap -->
-    <bool name="config_wifiSoftapHeMuBeamformerSupported">true</bool>
-
-    <!-- Wifi driver supports IEEE80211AX TWT (Target Wake Time) for softap -->
-    <bool name="config_wifiSoftapHeTwtSupported">true</bool>
-
-    <!-- Wifi driver supports 6GHz band for softap when chip support 6GHz -->
-    <bool name="config_wifiSoftap6ghzSupported">true</bool>
 
     <!-- Indicates that bridged AP mode is supported on this device provided that
      the device interface combination allows for it -->
