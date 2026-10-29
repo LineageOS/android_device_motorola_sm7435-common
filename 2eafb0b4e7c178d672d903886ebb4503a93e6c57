@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b995fc8f_ef3a126a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32837
+      },
+      "writtenOn": "2026-10-29T17:12:31Z",
+      "side": 1,
+      "message": "Remove the QSPM HAL entry from VINTF manifest, since its service and implementation have been removed. The remaining vendor.qti.qspmhal@1.0.so is only an interface library and does not require a VINTF declaration.\n\n`https://github.com/LineageOS/android_device_motorola_sm7435-common/blob/lineage-24.0/vintf/manifest.xml#L282`",
+      "revId": "2eafb0b4e7c178d672d903886ebb4503a93e6c57",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
