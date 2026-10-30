@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c5d0c3cc_2b8934d5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32837
+      },
+      "writtenOn": "2026-10-30T20:57:58Z",
+      "side": 1,
+      "message": "Wouldn\u0027t it make more sense to investigate why the kernel log buffer fills up so quickly in the first place?\n\nIncreasing its size might help with debugging, but if excessive logging is the actual issue, this only masks the problem rather than fixing it.",
+      "revId": "040e6dd8c9c7e8a3a9bfc99320ef4a0414404260",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
