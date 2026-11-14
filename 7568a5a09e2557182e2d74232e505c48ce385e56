@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "07484bc0_dc35e270",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 38625
+      },
+      "writtenOn": "2026-11-14T06:28:44Z",
+      "side": 1,
+      "message": "Suggested fix for https://github.com/LineageOS/issues/issues/1050",
+      "revId": "7568a5a09e2557182e2d74232e505c48ce385e56",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
