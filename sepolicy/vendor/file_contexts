@@ -8,3 +8,7 @@
 
 # Touch
 /vendor/bin/hw/vendor\.lineage\.touch-service\.moto_sm7435 u:object_r:hal_lineage_touch_default_exec:s0
+
+# Boot control
+/dev/block/bootdevice/by-name/init_boot_[ab]            u:object_r:boot_block_device:s0
+/dev/block/bootdevice/by-name/pvmfw_[ab]                u:object_r:boot_block_device:s0
