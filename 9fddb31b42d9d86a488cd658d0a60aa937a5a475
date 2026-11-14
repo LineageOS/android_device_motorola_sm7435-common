@@ -16,6 +16,23 @@
       "message": "Suggested fix for https://github.com/LineageOS/issues/issues/1102",
       "revId": "9fddb31b42d9d86a488cd658d0a60aa937a5a475",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7b54c516_ccabb400",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2026-11-14T16:43:08Z",
+      "side": 1,
+      "message": "https://review.lineageos.org/c/LineageOS/android_device_qcom_sepolicy_vndr/+/513391",
+      "revId": "9fddb31b42d9d86a488cd658d0a60aa937a5a475",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
