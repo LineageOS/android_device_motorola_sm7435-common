@@ -1,5 +1,6 @@
 on post-fs
     chown system system /sys/class/touchscreen/primary/single_tap_enabled
+    chown system system /sys/class/touchscreen/primary/double_tap_enabled
 
 service vendor.touch-hal-moto_sm7435 /vendor/bin/hw/vendor.lineage.touch-service.moto_sm7435
     class hal
